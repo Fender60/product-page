@@ -1,0 +1,41 @@
+@use "../../scss/templates" as tpl;
+
+.basket {
+	opacity: 0;
+	position: absolute;
+	top: tpl.px-to-rem(60px);
+	right: 0;
+	width: tpl.px-to-rem(350px);
+	min-height: tpl.px-to-rem(244px);
+	border-radius: 10px;
+	color: hsl(219, 9%, 45%);
+	background: #fff;
+	box-shadow: 0 10px 12px 5px hsla(0, 0%, 0%, 0.1);
+	transition: all 0.3s ease;
+	@media only screen and (max-width: tpl.$lg) {
+		top: tpl.px-to-rem(68px);
+	}
+	@media only screen and (max-width: tpl.$sm) {
+		width: 93vw;
+		top: tpl.px-to-rem(80px);
+	}
+	&__container {
+		padding: tpl.px-to-rem(20px 20px);
+	}
+
+	&__title {
+		color: #000;
+		font-weight: 700;
+	}
+
+	&__header {
+		border-bottom: 1px solid hsl(220, 14%, 75%);
+		padding-bottom: tpl.px-to-rem(20px);
+		margin-bottom: tpl.px-to-rem(18px);
+	}
+
+	&.open {
+		opacity: 1;
+		z-index: 100;
+	}
+}

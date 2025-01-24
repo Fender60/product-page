@@ -56,7 +56,7 @@ export default function Header() {
 						{cart.length > 0 && <span className="cart-quantity">{cart.length}</span>}
 					</button>
 					<Basket isBasketOpen = {isBasketOpen}/>
-					<button className='header__icons-avatar'><img src="../../../public/images/image-avatar.png" alt="avatar" /></button>
+					<button className='header__icons-avatar'><img src="./images/image-avatar.png" alt="avatar" /></button>
 				</div>
 			</div>
 		</header>

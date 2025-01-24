@@ -48,7 +48,7 @@ export default function ProductCard() {
 	return (
 		<>
 			{data.length === 0 ? (
-				<p>Loading...</p>
+				<div className='loading'><div className='loader'></div></div>
 			) : (
 				<article className="card">
 					<div className={`card__slider-full ${isSliderOpen ? "active" : ""}`}>

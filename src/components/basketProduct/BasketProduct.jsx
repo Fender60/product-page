@@ -17,7 +17,7 @@ export default function BasketProduct() {
 				<div>
 					<div className="product">
 						<div className="product__image">
-							<img src='/images/image-product-1-thumbnail.jpg' alt="product" />
+							<img src='./images/image-product-1-thumbnail.jpg' alt="product" />
 						</div>
 						<div className="product__info">
 							<h3 className="product__title">{cart[0].name}</h3>
